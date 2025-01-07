@@ -1,7 +1,7 @@
 
 "use client";
 import Link from "next/link";
-import { useState } from "react"; // Importing useState hook
+import { useState } from "react"; 
 import { Montserrat } from "next/font/google";
 
 const mont = Montserrat({ subsets: ["latin"] });
@@ -9,15 +9,15 @@ const mont = Montserrat({ subsets: ["latin"] });
 import Image from "next/image";
 
 export default function LightNavbar() {
-  const [menuOpen, setMenuOpen] = useState(false); // State to track menu visibility
+  const [menuOpen, setMenuOpen] = useState(false); 
 
   const toggleMenu = () => {
-    setMenuOpen(!menuOpen); // Toggle menu visibility
+    setMenuOpen(!menuOpen); 
   };
 
   return (
     <>
-      <nav className="h-auto w-full bg-[#FAFAFA] lg:bg-white">
+      <nav className="sticky top-0 z-50 h-auto w-full bg-[#FAFAFA] lg:bg-white">
         <div className="flex items-center justify-between mt-3 ml-9 mr-9 lg:mt-0">
           {/* logo */}
           <div className="w-[50vw] sm:w-[46vw] md:w-[40vw] lg:w-[20vw] xl:w-[15vw]">
@@ -48,10 +48,10 @@ export default function LightNavbar() {
             >
             <Link href="/"><li className=" cursor-pointer hover:text-[#23A6F0] ">Home</li></Link> 
             <Link href="/Shop"><li className="cursor-pointer hover:text-[#23A6F0]">Shop</li></Link>  
-              <li className="cursor-pointer hover:text-[#23A6F0]">About</li>
-              <li className="cursor-pointer hover:text-[#23A6F0]">Contact</li>
-              <li className="cursor-pointer hover:text-[#23A6F0]">Pricing</li>
-              <li className="cursor-pointer hover:text-[#23A6F0]">Team</li>
+            <Link href="/About"><li className="cursor-pointer hover:text-[#23A6F0]">About</li></Link>
+            <Link href="/Contact"><li className="cursor-pointer hover:text-[#23A6F0]">Contact</li></Link>
+            <Link href="/Pricing"><li className="cursor-pointer hover:text-[#23A6F0]">Pricing</li></Link>
+            <Link href="/Team"><li className="cursor-pointer hover:text-[#23A6F0]">Team</li></Link>
             </ul>
 
             <div className="flex items-center gap-2">
@@ -102,16 +102,18 @@ export default function LightNavbar() {
 
         {/* Conditional rendering for the navigation menu (visible only below lg) */}
         {menuOpen && (
-          <div className="mt-10 lg:hidden">
+          <div className=" fixed top-0 w-full h-full bg-[#FAFAFA] pt-[6vw] mt-[15vw]
+          sm:mt-[13vw] md:mt-[11vw] lg:hidden z-40">
             <ul
-              className={`${mont.className} flex flex-col gap-[30px] items-center text-[6.2vw] text-[#737373] sm:text-[5.4vw] md:text-[4.5vw]`}
+              className={`${mont.className} flex flex-col gap-[30px] items-center text-[6.2vw] 
+               text-[#737373] sm:text-[5.4vw] md:text-[4.5vw]`}
             >
-              <li className="cursor-pointer hover:text-[#23A6F0]">Home</li>
-              <li className="cursor-pointer hover:text-[#23A6F0]">Shop</li>
-              <li className="cursor-pointer hover:text-[#23A6F0]">About</li>
-              <li className="cursor-pointer hover:text-[#23A6F0]">Contact</li>
-              <li className="cursor-pointer hover:text-[#23A6F0]">Pricing</li>
-              <li className="cursor-pointer hover:text-[#23A6F0]">Team</li>
+            <Link href="/"><li className="cursor-pointer hover:text-[#23A6F0]">Home</li></Link> 
+            <Link href="/Shop"><li className="cursor-pointer hover:text-[#23A6F0]">Shop</li></Link> 
+            <Link href="/About"><li className="cursor-pointer hover:text-[#23A6F0]">About</li></Link> 
+            <Link href="/Contact"><li className="cursor-pointer hover:text-[#23A6F0]">Contact</li></Link> 
+            <Link href="/Pricing"><li className="cursor-pointer hover:text-[#23A6F0]">Pricing</li></Link> 
+            <Link href="/Team"><li className="cursor-pointer hover:text-[#23A6F0]">Team</li></Link>
             </ul>
 
             {/* login/register button */}
@@ -162,6 +164,12 @@ export default function LightNavbar() {
           </div>
         )}
       </nav>
+   
+
+    {/* // chatgpt code  */}
+
+  
+    
     </>
   );
 }

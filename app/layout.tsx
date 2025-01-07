@@ -1,9 +1,14 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
+import Footer from "@/components/Footer/Footer";
+
+const mont = Montserrat({ subsets: ["latin"] });
 import "./globals.css";
 import DarkNavbar from '@/components/Header/DarkNavbar';
 
 import LightNavbar from '@/components/Header/LightNavbar';
+import { Import } from "lucide-react";
 
 
 const inter = Inter({ subsets: ["latin"] });
@@ -20,11 +25,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={mont.className}>
       <DarkNavbar />
 
       <LightNavbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

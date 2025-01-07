@@ -2,12 +2,10 @@ import { Montserrat } from "next/font/google"
 
 const mont = Montserrat({subsets : ['latin']})
 
-
-
  export default function DarkNavbar() {
   return (
   <>
-    <div className="lg:w-full lg:h-[58px] lg:bg-[#252B42] lg:text-[#FFFFFF] lg:flex  lg:justify-between lg:items-center">
+    <div className=" lg:w-full lg:h-[58px] lg:bg-[#252B42] lg:text-[#FFFFFF] lg:flex  lg:justify-between lg:items-center">
 
       {/* phone number section */}
 
