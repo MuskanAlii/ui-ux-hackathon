@@ -29,7 +29,6 @@ const mont = Montserrat({subsets : ['latin']})
       </h6>
       </div>
 
-
       {/* email section */}
 
       <div className="lg:flex lg:items-center lg:gap-1 ">
@@ -50,14 +49,13 @@ const mont = Montserrat({subsets : ['latin']})
       </div>
 
       </div>
+
       {/* center section */}
 
       <div className="hidden lg:flex">
-
         <h6 className={`${mont.className} lg:text-[14px] lg:font-bold`}>
         Follow Us  and get a chance to win 80% off
         </h6>
-    
       </div>
 
       {/* follow us section */}
@@ -116,40 +114,8 @@ const mont = Montserrat({subsets : ['latin']})
         </defs>
         </svg>
 
-
         </div>
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
   </>
    

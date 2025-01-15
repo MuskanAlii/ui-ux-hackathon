@@ -578,7 +578,6 @@ xl:gap-[7vw]">
     </div>
 </section>
 
-
       {/* Featured Products Section  */}
   
       <section className=" pt-[5vw] px-[10vw] md:px-[13vw] lg:px-24 mb-[18vw] sm:mb-[13vw] lg:mb-[9vw]">
@@ -609,7 +608,7 @@ xl:gap-[7vw]">
         {posts.map((post, index) => (
           <div
             key={index}
-            className="bg-white rounded-lg shadow-md  "
+            className="bg-white rounded-lg shadow-md"
           >
             <div className="relative">
               <Image
@@ -657,31 +656,6 @@ xl:gap-[7vw]">
       </div>
 
     </section>
-
-        
-
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
    </main>
    </>

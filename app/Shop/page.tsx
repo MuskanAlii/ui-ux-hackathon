@@ -275,15 +275,8 @@ export default function Shop(){
     Next
   </button>
 </div>
-
-
  
 </>
-
-
-
-
-
   );
 };
 

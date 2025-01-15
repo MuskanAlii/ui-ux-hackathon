@@ -1,7 +1,6 @@
 //About Us Page
 
 import LogoRow from "@/components/LogoRow/LogoRow"
-import { Button } from "@/components/ui/button"
 
 import Image from "next/image"
 export default function About() {
@@ -57,7 +56,6 @@ export default function About() {
         lg:text-[1.4vw] lg:px-[3.3vw] lg:py-[1.6vw] lg:mt-[4vw] lg:mb-0
         xl:text-[1vw] xl:font-bold xl:py-[1.2vw]
         ">
-         
           Get Quote Now
         </button>
       </div>
@@ -143,7 +141,7 @@ export default function About() {
     <section className="px-[10vw] py-[10vw] lg:py-[7vw] xl:px-[15vw] xl:py-[5vw] 2xl:py-[3vw]">
       <div>
         <Image
-        src="images/video-card.svg"
+        src="/images/Video-card.svg"
         alt="video"
         width={300}
         height={300}
@@ -241,30 +239,6 @@ export default function About() {
   </section>
 
   {/* Work with us  */}
-
-  {/* <section className="flex flex-col md:flex-row my-[10vw] items-center justify-between bg-blue-500 text-white"> */}
-      {/* Left Content */}
-      {/* <div className="md:w-1/2 text-center md:text-left space-y-4 ">
-        <h4 className="text-sm uppercase tracking-wide font-semibold">Work With Us</h4>
-        <h1 className="text-3xl md:text-5xl font-bold">Now Let&#8217;s grow Yours</h1>
-        <p className="text-base md:text-lg leading-relaxed">
-          The gradual accumulation of information about atomic and small-scale behavior during the first quarter of the 20th century.
-        </p>
-        <button className="mt-4 px-6 py-2 bg-white text-blue-500 font-medium rounded-md shadow hover:bg-gray-200 transition">
-          Button
-        </button>
-      </div> */}
-
-      {/* Right Image */}
-      {/* <div className="md:w-1/2 mt-6 md:mt-0 flex justify-center md:justify-end">
-        <Image
-          src="/images/about-work-with-image.svg"
-          alt="Model"
-          width
-          className="max-w-full h-auto object-contain"
-        />
-      </div> */}
-    {/* </section> */}
 
     <section className="flex flex-col lg:flex-row items-center justify-between pt-[20vw] bg-[#2A7CC7] text-white
     md:pt-[17vw] lg:pt-0 xl:mb-[5vw]">

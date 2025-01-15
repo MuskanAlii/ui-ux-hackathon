@@ -18,7 +18,7 @@ export default function LightNavbar() {
   return (
     <>
       <nav className="sticky top-0 z-50 h-auto w-full bg-[#FAFAFA] lg:bg-white">
-        <div className="flex items-center justify-between mt-3 ml-9 mr-9 lg:mt-0">
+        <div className="flex items-center justify-between ml-9 mr-9 lg:mt-0">
           {/* logo */}
           <div className="w-[50vw] sm:w-[46vw] md:w-[40vw] lg:w-[20vw] xl:w-[15vw]">
             <Image
@@ -164,12 +164,6 @@ export default function LightNavbar() {
           </div>
         )}
       </nav>
-   
-
-    {/* // chatgpt code  */}
-
-  
-    
     </>
   );
 }
